@@ -13,6 +13,7 @@ RUN curl --fail -X POST -d @/etc/NAE/AppDef.json https://api.jarvice.com/jarvice
 
 COPY samples /usr/local/samples
 COPY scripts/sample_notebook.sh /usr/local/scripts/sample_notebook.sh
+COPY samples/motd /etc/motd
 
 #add Jupyter
 RUN pip install --upgrade pip
