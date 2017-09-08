@@ -19,10 +19,10 @@ RUN pip install --upgrade pip
 RUN pip install notebook pyyaml
 RUN pip install jupyter
 RUN pip install ijson
-RUN pip install --upgrade pandas
+RUN pip install pandas==0.20.3
 RUN pip install python-resize-image
 
-RUN pip install pandas_datareader
+RUN pip install pandas_datareader==0.5.0
 RUN pip install httplib2
 RUN apt-get install -y build-essential
 RUN apt-get install -y libssl-dev
