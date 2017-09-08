@@ -19,7 +19,7 @@ RUN pip install --upgrade pip
 RUN pip install notebook pyyaml
 RUN pip install jupyter
 RUN pip install ijson
-RUN pip install pandas
+RUN pip install --upgrade pandas
 RUN pip install python-resize-image
 
 RUN pip install pandas_datareader
