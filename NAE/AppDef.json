@@ -12,7 +12,7 @@
         "IBM POWER/Data Science"
     ],
     "machines": [
-        "np8g1"
+        "np8g*"
     ],
     "vault-types": [
         "NONE"
