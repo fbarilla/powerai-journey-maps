@@ -35,7 +35,8 @@ RUN apt-get install -y openssh-server
 RUN pip install cython
 RUN apt-get install -y python-scipy
 RUN pip install scikit-learn
-RUN apt-get install -y libxml2-dev libxmlsec1-dev
+RUN apt-get install -y libxml2-dev 
+# RUN apt-get install -y libxmlsec1-dev
 RUN pip install dragnet
 RUN pip install watson_developer_cloud
 RUN pip install quandl
