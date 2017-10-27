@@ -45,6 +45,7 @@ RUN pip install nytimesarticle
 RUN pip install ibmseti
 RUN apt-get update
 RUN apt-get install -y default-jre
+RUN pip install pyspark
 
 WORKDIR /root
 RUN wget https://d3kbcqa49mib13.cloudfront.net/spark-2.2.0-bin-hadoop2.7.tgz
