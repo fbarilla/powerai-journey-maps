@@ -15,7 +15,10 @@
         "np8g*"
     ],
     "vault-types": [
-        "NONE"
+        "FILE",
+        "BLOCK",
+        "BLOCK_ARRAY",
+        "OBJECT" 
     ],
     "commands": {
         "Start": {
