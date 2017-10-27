@@ -42,3 +42,11 @@ RUN pip install watson_developer_cloud
 RUN pip install quandl
 RUN pip install nytimesarticle
 
+RUN pip install ibmseti
+RUN apt-get update
+RUN apt-get install -y default-jre
+
+WORKDIR /root
+RUN wget https://d3kbcqa49mib13.cloudfront.net/spark-2.2.0-bin-hadoop2.7.tgz
+RUN tar -xvf spark-2.2.0-bin-hadoop2.7.tgz
+
