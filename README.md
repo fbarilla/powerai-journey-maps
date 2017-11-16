@@ -1,8 +1,11 @@
 # TensorFlow Journey Maps
 
 Welcome to the free trial of PowerAI frameworks on the cloud. 
+
 The container is already provisioned with PowerAI R4 with the following attributes: 32 thread POWER8, 128 GB, 1 x P100 Tesla GPU with NVLink (np8g1)
+
 The container contains several cognitive journeys that demonstrate the use of deep learning frameworks such as TensorFlow or Caffe in extracting or recognizing patterns from large amounts of data. While the Jupyter notebooks can run without GPUs, having the P100 Tesla GPU along with IBM's NVLink technology adds significant acceleration, specially for large datasets and for use cases involving data transfers between CPU and GPU. Users can run the 3 Cognitive Journeys or their own applications in this container and experience the acceleration first hand.
+
 If you have not registered for the free trial already, please go here. (Note for Linda: The "here" could be a hyperlink to the registration page)
 
 The contents of the free trial container:
