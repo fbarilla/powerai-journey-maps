@@ -9,13 +9,9 @@ The container contains several cognitive journeys that demonstrate the use of de
 If you have not registered for the free trial already, please go here. (Note for Linda: The "here" could be a hyperlink to the registration page)
 
 The contents of the free trial container:
-
-a) Compiled application programs in form of Jupyter notebooks
-
+a) Compiled application programs in form of Jupyter notebooks 
 b) The source code for those demo programs
-
 c) Work space for users to test or port their code
-
 d) Network access to the internet
 
 The free trial container has a default 4 hour timer
@@ -31,14 +27,9 @@ Name: TensorFlow Machine Learning with Financial, New York Times and Watson Data
 Description: This solution presents an accessible, non-trivial example of machine learning with time series on IBM Power8 systems. This experiment will focus on the ‘renewable energy’ sector. In this solution, we will: 
 
 Obtain ‘renewable energy’ data from a number of financial markets (indexes and ETFs).
-
-
 Obtain from the New York Times articles related to renewable energies
-
 Use Watson to process the articles and extract meaningful data.
-
 Munge that data into a usable format and perform exploratory data analysis in order to explore and validate a premise.
-
 Use TensorFlow to build, train and evaluate a number of models for predicting what will happen in financial markets 
 
 Significance of the program: Demonstrate the rich ML/DL development environment on IBM Power systems
@@ -75,6 +66,7 @@ POWER8	40	256 GB	1 x Tesla K80 w/ PCIe	~0.127	~72% at 75Ksteps (3 hours)
 POWER8	32	128 GB	1x Tesla P100 w/ NVLink	~0.035	~72 % at 75K steps (1 hour)
 
 Running the Multi-GPU version of the model:
+
 CPU Architecture	CPU cores	Memory	GPU model	Step time (sec/batch)	Accuracy
 POWER8	160	1 TB	4 x Tesla K80 w/ PCIe	~0.066	~72% at 75Ksteps (83 mins)
 POWER8	64	256 GB	2 x Tesla P100 w/ NVLink	~0.033	~72% at 75Ksteps (40 mins)
