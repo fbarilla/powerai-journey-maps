@@ -1,29 +1,5 @@
-All ML/DL frameworks live in /opt/DL; you must source an environment setup
-script before accessing them, e.g. one of the following:
-
-	source /opt/DL/caffe-bvlc/bin/caffe-activate
-	source /opt/DL/caffe-ibm/bin/caffe-activate
-	source /opt/DL/caffe-nv/bin/caffe-activate	# recommended
-	source /opt/DL/chainer/bin/chainer-activate
-	source /opt/DL/openblas/bin/openblas-activate
-	source /opt/DL/tensorflow/bin/tensorflow-activate
-	source /opt/DL/theano/bin/theano-activate
-	source /opt/DL/torch/bin/torch-activate
-
-After sourcing the environment script for the framework you wish to use,
-please read the framework-specific documentation in its respective doc[s]
-directory - e.g. one of the following:
-
-	/opt/DL/caffe-*/docs
-	/opt/DL/chainer/doc
-	/opt/DL/openblas/doc
-	/opt/DL/repo/doc
-	/opt/DL/tensorflow/doc
-	/opt/DL/theano/doc
-	/opt/DL/torch/doc
-
-This demonstration container is free for 24 hours.  
-After you have completed the demos, feel free to use the container to explore the capabilities of PowerAI. 
-If you have completed the demonstration, please help conserve resources by canceling the subscription used 
-to create this instance.  
-Thank you. 
+Welcome to the Welcome to the free trial of PowerAI frameworks on the cloud. 
+The container is already provisioned with PowerAI v1.4 with the following attributes: 32 thread POWER8, 128 GB, 1 x P100 Tesla GPU with NVLink (np8g1)
+The container contains several cognitive journeys that demonstrate the use of deep learning frameworks such as TensorFlow or Caffe in extracting or recognizing patterns from large amounts of data. While the Jupyter notebooks can run without GPUs, having the P100 Tesla GPU along with IBM's NVLink technology adds significant acceleration, specially for large datasets and for use cases involving data transfers between CPU and GPU. 
+Please note that there is a built in 4 hour timer to save resources and free up the GPU in case it is not being used. This timer starts at time of creation and is not affected by the login or logout by the user. Upon the 4 hour mark, the container will shut itself down, free the GPU and the container will be deleted. However, any files that the user kept in the container’s /shared directory will be preserved and the user can log back in with new credentials assigned after the user presses "restart" from the IBM Marketplace dashboard, as long as there is left over clock time.
+Please refer to this page for more information. There is  -> https://developer.ibm.com/linuxonpower/deep-learning-powerai/cognitive-journey-maps/
