@@ -60,25 +60,33 @@ In this Notebook, we will use the famous SETI Dataset to build a Convolutional N
 ## SETI_prediction.ipynb
 
 In this notebook you can load a pre-trained model and predict the signal class.
-Performance
 
-Convelutional Neural Network involves a lot of matrix and vector multiplications that can parallelized, so GPUs can overperform, because GPUs were designed to handle these kind of matrix operations in parallel!
-Why GPU overperforms?
+## Performance
+
+Convolutional Neural Network involves a lot of matrix and vector multiplications that can parallelized, so GPUs can overperform, because GPUs were designed to handle these kind of matrix operations in parallel!
+
+## Why GPU overperforms?
 
 A single core CPU takes a matrix operation in serial, one element at a time. But, a single GPU could have hundreds or thousands of cores, while a CPU typically has no more than a few cores.
-How to use GPU with TensorFlow?
+
+## How to use GPU with TensorFlow?
 
 It is important to notice that if both CPU and GPU are available on the machine that you are running the noebook, and if a TensorFlow operation has both CPU and GPU implementations, the GPU devices will be given priority when the operation is assigned to a device.
-Benchmark:
+
+## Benchmark:
 
     SETI_single_gpu_train.py achieves ~72% accuracy after 3k epochs of data (75K steps).
     Speed: With batch_size 128.
     Notice: The model is not optimized to reach to its highest accuracy, you can achive better results tuning the parameters.
 
-CPU Architecture 	CPU cores  	Memory  	GPU  	Step time (sec/batch)  	 Accuracy
+
+<table>
+    <tr> <th>CPU Architecture</th> 	<th>CPU cores </th> <th>	Memory  </th>	<th>GPU </th> 	<th>Step time (sec/batch) </th> 	<th> Accuracy</th> </tr>
+</table>
 POWER8 	40 	256 GB 	1 x Tesla K80 	~0.127 	~72% at 75K steps (3 hours)
 POWER8 	32 	128 GB 	1 x Tesla P100 w/NVLink np8g4 	~0.035 	~72% at 75K steps (1 hour)
 
+bbbbbb
     SETI_multi_gpu_train.py achieves ~72% accuracy after 75K steps.
     Speed: With batch_size 128.
     Notice: The model is not optimized to reach to highest accuracy, and you can achive better results tuning the parameters.
