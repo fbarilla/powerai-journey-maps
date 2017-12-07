@@ -82,11 +82,10 @@ It is important to notice that if both CPU and GPU are available on the machine 
 
 <table>
     <tr> <th>CPU Architecture</th> 	<th>CPU cores </th> <th>	Memory  </th>	<th>GPU </th> 	<th>Step time (sec/batch) </th> 	<th> Accuracy</th> </tr>
+<tr> <th>POWER8 </th>	<th>40</th> 	<th>256 GB </th>	<th>1 x Tesla K80</th> 	<th>~0.127 </th>	<th>~72% at 75K steps (3 hours)</th> </tr>
+    <tr> <th>POWER8</th> 	<th>32</th> 	<th>128 GB</th> 	<th>1 x Tesla P100 w/NVLink np8g4</th> 	<th>~0.035</th> 	<th>~72% at 75K steps (1 hour)</th>,/tr>
 </table>
-POWER8 	40 	256 GB 	1 x Tesla K80 	~0.127 	~72% at 75K steps (3 hours)
-POWER8 	32 	128 GB 	1 x Tesla P100 w/NVLink np8g4 	~0.035 	~72% at 75K steps (1 hour)
 
-bbbbbb
     SETI_multi_gpu_train.py achieves ~72% accuracy after 75K steps.
     Speed: With batch_size 128.
     Notice: The model is not optimized to reach to highest accuracy, and you can achive better results tuning the parameters.
